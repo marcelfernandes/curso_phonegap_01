@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<widget xmlns   = "http://www.w3.org/ns/widgets"
+        xmlns:gap   = "http://phonegap.com/ns/1.0"
+        id          = "br.com.marcelfernandes.cursophonegap01"
+        versionCode = "10"
+        version     = "1.0.0" >
+
+    <!-- versionCode is optional and Android only -->
+
+    <name>Curso PhoneGap 01</name>
+
+    <description>
+        Curso phonegap 01.
+    </description>
+
+    <author href="http://www.marcelfernandes.com.br" email="marcel.fernandes@gmail.com">
+        Marcel Fernandes
+    </author>
+
+    <!--Utilizado pelo whitelist, para acessar algo, uma base...-->
+    <access origin="http://www.marcelfernandes.com.br" />
+    <!--Não recomendado:-->
+    <!--<access origin="*" />-->
+
+    <platform name="ios" />
+    <platform name="android" />
+    <platform name="winphone" />
+
+    <splash platform="android" qualifier="port-ldpi" src="splash/android/screen-port-ldpi.png" />
+    <splash platform="android" qualifier="port-mdpi" src="splash/android/screen-port-mdpi.png" />
+    <splash platform="android" qualifier="port-hdpi" src="splash/android/screen-port-hdpi.png" />
+    <splash platform="android" qualifier="port-xhdpi" src="splash/android/screen-port-xhdpi.png" />
+
+    <splash platform="android" qualifier="land-ldpi" src="splash/android/screen-land-ldpi.png" />
+    <splash platform="android" qualifier="land-mdpi" src="splash/android/screen-land-mdpi.png" />
+    <splash platform="android" qualifier="land-hdpi" src="splash/android/screen-land-hdpi.png" />
+    <splash platform="android" qualifier="land-xhdpi" src="splash/android/screen-land-xhdpi.png" />
+
+    <!--default-->
+    <splash src="splash.png" />
+
+    <!--default-->
+    <icon src="icon.png" />
+
+
+    <preference name="android-minSdkVersion" value="19" />
+    <preference name="android-maxSdkVersion" value="23" />
+    <preference name="android-targetSdkVersion" value="21" />
+
+    <!--iOS-->
+    <preference name="deployment-target" value="7.0" />
+
+    <!--Windows 10 (default)-->
+    <preference name="windows-appx-target" value="uap" />
+    <!--Windows 8.1-->
+    <preference name="windows-appx-target" value="8.1-win" />
+    <!--Windows Phone 8.1-->
+    <preference name="windows-appx-target" value="8.1-phone" />
+
+
+    <platform name="ios">
+        <preference name="orientation" value="landscape" />
+    </platform>
+    <platform name="android">
+        <preference name="orientation" value="portraid" />
+    </platform>
+    <preference name="fullscreen" value="true" />
+    <preference name="KeepRunning" value="false" />
+
+    <!--<plugin name="nl.x-services.plugins.socialsharing" version="4.3.16" />
+    <plugin name="cordova-plugin-whitelist" source="npm" />-->
+    <plugin name="cordova-plugin-splashscreen" source="npm" />
+
+</widget>
